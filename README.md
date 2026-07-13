@@ -28,10 +28,10 @@ A Kubernetes deployment provider for [AgentKit](https://github.com/plexusone/age
 
 ## Features
 
-- **Cloud-Agnostic**: Same deployment code works across all Kubernetes distributions
-- **Pulumi-Based**: Infrastructure-as-Code with Go, no YAML required
-- **Full K8s Support**: Deployment, Service, Ingress with TLS
-- **Configurable**: Resource limits, probes, tolerations, node selectors
+- ☁️ **Cloud-Agnostic**: Same deployment code works across all Kubernetes distributions
+- 🏗️ **Pulumi-Based**: Infrastructure-as-Code with Go, no YAML required
+- ☸️ **Full K8s Support**: Deployment, Service, Ingress with TLS
+- 🔧 **Configurable**: Resource limits, probes, tolerations, node selectors
 
 ## Supported Platforms
 
