@@ -1,0 +1,33 @@
+{
+  "irVersion": "1.0",
+  "project": "agentkit-k8s-pulumi",
+  "repository": "https://github.com/plexusone/agentkit-k8s-pulumi",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "releases": [
+    {
+      "version": "v0.1.0",
+      "date": "2026-07-13",
+      "highlights": [
+        { "description": "Initial release with Kubernetes deployment provider for cloud-agnostic container deployments" }
+      ],
+      "added": [
+        { "description": "Kubernetes `deploy.Provider` implementation with Deploy, Status, Destroy, and Close methods (`deploy/providers/kubernetes/provider.go`)" },
+        { "description": "K8s-specific configuration: namespace, replicas, service type, ingress, probes, tolerations, node selectors (`deploy/providers/kubernetes/config.go`)" },
+        { "description": "Pulumi automation API wrapper for programmatic stack management (`deploy/pulumi/stack.go`)" },
+        { "description": "Auto-registration with AgentKit provider registry at priority 50 (`deploy/providers/kubernetes/init.go`)" },
+        { "description": "Deployment resource creation with container spec, environment variables, and resource limits" },
+        { "description": "Service resource creation with ClusterIP, NodePort, or LoadBalancer types" },
+        { "description": "Optional Ingress resource with TLS support and configurable ingress class" },
+        { "description": "Liveness and readiness probe configuration from health check settings" },
+        { "description": "Pod annotations, labels, tolerations, and node selector support" },
+        { "description": "Image pull secrets for private registry authentication" },
+        { "description": "Service account configuration for RBAC" }
+      ],
+      "documentation": [
+        { "description": "README with installation, quick start, and configuration reference" },
+        { "description": "v0.1.0 release notes in `docs/releases/`" }
+      ]
+    }
+  ]
+}
