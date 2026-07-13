@@ -212,7 +212,7 @@ func (p *Provider) createProgram(cfg *deploy.DeployConfig) pulumi.RunFunc {
 		container := p.buildContainerSpec(cfg)
 
 		// Build pod spec
-		podSpec := p.buildPodSpec(cfg, container)
+		podSpec := p.buildPodSpec(container)
 
 		// Create Deployment
 		deploymentName := p.getDeploymentName(cfg)
@@ -317,7 +317,7 @@ func (p *Provider) buildContainerSpec(cfg *deploy.DeployConfig) *corev1.Containe
 }
 
 // buildPodSpec builds the pod specification.
-func (p *Provider) buildPodSpec(cfg *deploy.DeployConfig, container *corev1.ContainerArgs) *corev1.PodSpecArgs {
+func (p *Provider) buildPodSpec(container *corev1.ContainerArgs) *corev1.PodSpecArgs {
 	podSpec := &corev1.PodSpecArgs{
 		Containers: corev1.ContainerArray{container},
 	}
