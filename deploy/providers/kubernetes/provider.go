@@ -6,12 +6,13 @@ import (
 	"time"
 
 	"github.com/plexusone/agentkit/deploy"
-	pulumiutil "github.com/plexusone/agentkit-k8s-pulumi/deploy/pulumi"
 	appsv1 "github.com/pulumi/pulumi-kubernetes/sdk/v4/go/kubernetes/apps/v1"
 	corev1 "github.com/pulumi/pulumi-kubernetes/sdk/v4/go/kubernetes/core/v1"
 	metav1 "github.com/pulumi/pulumi-kubernetes/sdk/v4/go/kubernetes/meta/v1"
 	networkingv1 "github.com/pulumi/pulumi-kubernetes/sdk/v4/go/kubernetes/networking/v1"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
+
+	pulumiutil "github.com/plexusone/agentkit-k8s-pulumi/deploy/pulumi"
 )
 
 // Provider implements deploy.Provider for Kubernetes workloads.
